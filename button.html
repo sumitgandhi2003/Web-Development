@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+
+        }
+        .btn1, .btn2{
+            background-color:#4fffff;
+            width: 9em;
+            height: 3em;
+            margin: 10px;
+            border-radius: 30em;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            z-index: 1;
+            box-shadow: 6px 6px 12px #000000;
+            transition: 1s all ease;
+
+        }
+
+        .btn1::before{
+            content: '';
+            height: 3em;
+            width: 9em;
+            position: absolute;
+            background-image: linear-gradient(#ae01eb, #5901fa);
+            /* display: inline-bloc; */
+            z-index: -1;
+            transition: .5s ease;
+            /* border-radius: 30em; */
+            top: 0;
+            left: 0;
+            bottom:0;
+            right: 0;
+           transform: scaleY(0);
+
+
+        }
+        .btn1:hover::before{
+            /* width: 9em; */
+            height: 3em;
+            transform: scaleY(1);
+            /* transform: scaleX(2);
+            transform: scaleY(2); */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <button class="btn1">Submit</button>
+    <button class="btn2">Submit</button>
+</body>
+</html>

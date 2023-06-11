@@ -1,0 +1,143 @@
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.main{
+    background-color:#cffff2;
+    padding: 0;
+    margin: 0;
+}
+.top-container h1{
+    position: absolute;
+    top: 240px;
+    margin: 0 0 0 490px ;
+    font-family: 'Sacramento', cursive;
+    width: 500px;
+    font-size: 70px;
+    color: #4ab19a;
+    
+}
+.top-container h2{
+    position: absolute;
+    top: 330px;
+    margin: 0 0 0 640px ;
+    font-weight: normal;
+    /* align-items: center; */
+    
+}
+
+.top-container{
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+.middle-container #profile1{
+    width: 150px;
+
+}
+.middle-container{
+    margin-top: 100px;
+}
+.bottom-container{
+    padding: 50px 0 20px 0;
+    background-color: #cffff2;
+    position: relative;
+    top: 5px;
+}
+.bottom-container a{
+    margin: 20px;
+    padding: 0;
+    font-weight: lighter;
+    color: #26a98b;
+}
+.bottom-container a:hover{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.div1{
+    display: flex;
+    height: 50%;
+    position: ;
+
+}
+#profile{
+    position: relative;
+    top: 30px;
+    left :19%;
+    width: 85px;
+}
+nav{
+    position: absolute;
+    top: 50px;
+    left: 65%;
+    
+}
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+
+}
+.top-cloud{
+    position:absolute;
+    top: 25%;
+    right: 20%;
+}
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+}
+hr{
+    width: 60px;
+    border-style: dotted;
+    border-bottom: 0;
+    border-width: 5px;
+    color: lightgrey;
+}
+span{
+    border-bottom: 1px solid ;
+}
+span:hover{
+    color: black;
+    cursor: pointer;
+}
+h2{
+    color: #1e836c;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    color: #26a98b;
+    font-family: 'Montserrat', sans-serif;
+}
+.mountain{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 4px;
+
+}
+.btn{
+    background-color: #26a98b;
+    padding:13px 30px 13px 30px ;
+    color: #1e836c ;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #0cb892;
+}
+.contact-me p{
+    font-size: large;
+    font-family: 'Noto Sans', sans-serif;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            width: 100%;
+            height: 70vh;
+            background-image: url('zomato-background.avif');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: 1600px;
+            position: relative;
+        }
+        .nav{
+            
+            display: flex;
+            position: sticky;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 20px;
+            font-size:x-large;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav{
+            
+            padding-top: 25px;
+            padding-left: 200px;
+            
+        }
+         /* .a2{
+               text-decoration: none;
+               color: white;
+               font-size: x-large;
+               align-items: center;
+               padding-left: 10%; 
+               font-weight: lighter
+             } */
+
+             .nav2{
+                padding-top: 25px;
+                padding-left: 350px;
+
+             }
+             .img{
+                padding-top: 5%;
+                width: 270px;
+                height: 60px;
+                border-radius: 5px;
+                padding-left: 40%;
+
+             }
+             h1{
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                font-size: 50px;  
+             }
+             .serach{
+                display: flex;
+                background-color: white;
+                width: 64%;
+                border-radius: 50px;
+                margin-top: 25px;
+                padding: 5px;
+                margin-left: 18%;
+             }
+             select{
+                border: none;
+                margin-left: 15px;
+                margin-right: 15px;
+                outline: none;
+             }
+             input[type="search"]{
+                border: none;
+                padding: 10px;
+                width: 100%;
+                outline: none;
+                border-radius: 50px;
+             }
+
+    </style>
+</head>
+<body>
+
+   <div class="head">
+     <div class="nav">
+        <nav>
+            <a href="" class="a1">Get the App</a>
+        </nav>
+        <nav class="nav2">
+            <a href="" class="a2">Investor Relations</a>
+            <a href="" class="a2">Add restaurant</a>
+            <a href="" class="a2">Log in</a>
+            <a href="" class="a2">Sign up</a>
+         </nav>
+    </div>
+   <div>
+    <div>
+        <img src="zomato.avif" class="img" alt="zomato">
+    </div>
+    <div>
+        <h1>Discover the best food & drinks </h1>
+    </div>
+    <div class="serach">
+        <img src="Location Icon.svg" alt=""  >
+        <select name="city" id="city">
+            <option value="">-----PLEASE SELECT-----</option>
+            <option value="jaipur">jaipur</option>
+            <option value="Ikaner">Bikaner</option>
+            <option value="Churu">Churu</option>
+            <option value="Sikar">Sikar</option>
+            <option value="Dungargarh">Dungargarh</option>
+            <option value="Alwar">Alwar</option>
+            <option value="Jhalor">Jhalor</option>
+            <option value="Ajmer">Ajmer</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Pushkar">Pushkar</option>
+            <option value="Kota">Kota</option>
+            <option value="Bhilwada">Bhilwada</option>
+            <option value="Nokha">Nokha</option>
+        </select>
+        <img src="Search-icon.svg" alt="search">
+        <input type="search" name="search" placeholder="Search For restaurant,Dish" id="search">
+    </div>
+   </div>
+</div>
+</body>
+</html>

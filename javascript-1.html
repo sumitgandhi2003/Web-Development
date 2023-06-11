@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body >
+    <label for="num1">Enter the First Number: </label>
+    <input type="number" id="num1" style="margin: 10px; outline: none;"> <br>
+    <label for="num2">Enter the Second Number: </label>
+    <input type="number" id="num2">
+    <select name="" id="option" style="width: 50px;">
+        <option value="">---Please Select---</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br> <br>
+    <button onclick="calculator()">result</button>
+    <input type="text" id="result">
+</body>
+<script>
+    // let time = new Date().getHours();
+    // if(time>15){
+    //     document.body.style.backgroundColor="Orange";
+    //     document.write(time);
+    // }
+    function calculator(){
+        let result;
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let options =  document.getElementById("option").value;
+        if(options=="+"){
+            result = (num1+num2);
+        }
+        else if(options=="-"){
+            result = (num1-num2);
+        }
+        else if(options=="*"){
+            result = (num1*num2);
+        }
+        else if(options=="/"){
+            result=a/b;
+        }
+        document.getElementById("result").value = result;
+    }
+        
+
+</script>
+</html>

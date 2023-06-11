@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=t, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function table()
+        {
+            let table="<table border='1'> <tr> <th>Number</th> <th> Square</th> <th> Cube</th> </tr>";
+            let i;
+            for (i = 1; i <=10; i++)
+            {
+                let square= i*i;
+                let cube= i*i*i;
+                table+="<tr> <td> " +i+"</td> <td>" + square + "</td> <td>"+ cube + "</td> </tr>";
+            }
+            table+="</table>";
+            document.getElementById("table_container").innerHTML=table;
+        }
+    </script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            
+        }
+        th {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body onload="table()">
+    <div id="table_container">
+
+    </div>
+   
+</body>
+</html>
